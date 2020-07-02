@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap-4.5.0-dist/css/bootstrap.css">
+
+    <script type="text/javascript" src="scriptUser.js"></script>
+  </head>
+  <body style="background-color: darkgray;">
+    <div class="container"  style="background-color: white;">
+      <nav class="row navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="">Barbershop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="./index.html">Home</a>
+            <a class="nav-item nav-link" href="./Servicos.html">Serviços</a>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <a class="nav-item nav-link btn btn-secondary" onclick="sair()">Sair</a>
+        </div>
+      </nav>
+      <div class="row" id="cadastroHorarioDiv">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4 bg-dark mt-5 mb-5">
+            <h1 class="text-center mb-3" style="width: 100%; color: white;">Marcar Horario</h1>
+            <div class="input-group mb-3">
+                <label style="color: white;" for="example-date-input" class="col-2 col-form-label">Data</label>
+                <div class="col-10">
+                    <input class="form-control" type="date" value="2020-07-02" id="campoData">
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <label style="color: white;" for="example-time-input" class="col-2 col-form-label">Horario</label>
+                <div class="col-10">
+                    <input class="form-control" type="time" value="13:45:00" id="campoHorario">
+                </div>
+            </div>
+            <button onclick="Marca()" type="button" class="btn btn-secondary btn-lg mb-4" style="width: 100%;">Marca</button>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+      <div class="row" id="HorarioDiv">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4 bg-dark mt-5 mb-5">
+            <h1 class="text-center mb-3" style="width: 100%; color: white;">Horario</h1>
+            <div class="input-group mb-3">
+                <label style="color: white;" for="example-date-input" class="col-2 col-form-label">Data</label>
+                <div class="col-10">
+                    <input class="form-control" type="date" value="2020-07-02" id="marcadoData">
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <label style="color: white;" for="example-time-input" class="col-2 col-form-label">Horario</label>
+                <div class="col-10">
+                    <input class="form-control" type="time" value="13:45:00" id="marcadoHorario">
+                </div>
+            </div>
+            <button onclick="Cancelar()" type="button" class="btn btn-secondary btn-lg mb-4" style="width: 100%;">Cancelar</button>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+      <footer class="row footer font-small bg-dark mt-5">
+        <div class="col-sm-12">
+          <ul class="list-unstyled list-inline text-center py-3">
+            <li class="list-inline-item">
+              <h5 class="mb-1">Seja Um Membro da Barbearia Gratuitamente</h5>
+            </li>
+            <li class="list-inline-item">
+              <a href="#!" class="btn btn-secondary">Cadastre-se!</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-copyright text-center py-2 col-sm-12">© 2020 Copyright:
+          <a style="color: #202020;" href="https://homepages.dcc.ufmg.br/~ramonbhb/disciplinas/webcm2020.html#disciplina">DesenvolvimentoWeb</a>
+        </div>
+      </footer>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
